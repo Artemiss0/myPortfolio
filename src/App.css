@@ -1,32 +1,278 @@
-/*General styles*/
-p{
-  line-height: 1.6em;
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/manrope-regular.woff') format('woff'),
+    url('./fonts/manrope-regular.woff2') format('woff2');
 }
-.navbar{
-  position: fixed;
-  width: 100%;
-  z-index: 2;
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./fonts/manrope-bold.woff') format('woff'),
+    url('./fonts/manrope-bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/manrope-extrabold.woff') format('woff'),
+    url('./fonts/manrope-extrabold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/manrope-light.woff') format('woff'),
+    url('./fonts/manrope-light.woff2') format('woff2');
+}
+
+/*General styles*/
+body {
+    font-family: Manrope, sans-serif;
+}
+
+p {
+    line-height: 1.8em;
+    font-size: 13pt;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 30pt;
+}
+
+h4 {
+    font-size: 15pt;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+.yellowText {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #F8D702;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+section div {
+    width: 50%;
+}
+
+section div.scroll {
+    padding: 8em 5em;
+}
+
+section div.sticky {
+    height: 100vh;
+    background: #F8D702;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    padding: 0;
+}
+
+#work .col-6.scroll {
+    padding: 0;
+}
+
+#work .sticky {
+    background: white;
+}
+section div.sticky {
+    padding: 8em 5em;
+}
+
+.stickyImage {
+    width: 70%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+/*Navigation styles*/
+.navbar {
+    position: fixed;
+    z-index: 2;
+    background: none !important;
+}
+
+.navbar ul li {
+    padding-left: 2em;
+    cursor: pointer;
+    font-size: 13pt;
+}
+
+a.nav-link.active {
+    background: #F8D702;
+}
+
+.navbar ul li:nth-child(first) {
+    padding-left: 0;
+}
+
+
+.centerText {
+    margin: 0 auto;
+}
+
+.right {
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 5em;
+}
+
+.left {
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 5em;
+}
+
+.middle {
+    width: 100%;
+    padding-top: 2em;
 }
 
 /*Header styles*/
-.header{
-  width: 100%;
-  height: 100vh;
+.header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
-/*About page styles*/
-.about{
+
+.headerImage {
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
 }
-.row{
-  /*margin: 0!important;*/
+
+/*Work page styles*/
+.projects {
+    height: auto;
+    width: 100%;
 }
-.leftSide, .rightSide{
-  height: 100vh;
-  width: 100%;
-  padding: 8em 3em 0 3em!important;
-  overflow: scroll;
+
+.mdl-tabs__tab-bar {
+    width: 100%;
 }
-.leftSide{
+
+.hide {
+    visibility: hidden;
 }
-.rightSide{
-  background: red;
+
+.projectHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: url("./images/dynasteaHeader.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    /*padding-top: 35vh;*/
+}
+.backButton {
+    background: #F8D702;
+    border: none;
+    position: absolute;
+    top: 5vh;
+    left: -3vh;
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 4em;
+}
+.projectContent{
+    width: 100%;
+    padding: 2em 2em;
+}
+
+.Dynastea {
+    background: url("./images/dynasteaHeader.jpg");
+    background-size: cover;
+}
+
+.Mintte {
+    background: url("./images/tom-rumble-1114771-unsplash.jpg");
+    background-size: cover;
+}
+
+/*Contact page styles*/
+
+.button {
+    background: #F8D702;
+    border: none;
+    color: white !important;
+    height: 2em;
+    padding: 0.4em 0.7em;
+    border-radius: 7em;
+    cursor: pointer;
+    margin-left: 0.8em;
+}
+
+.socialMediaButton {
+    background: #F8D702;
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 1em 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    margin-top: 2em;
+    color: white;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*media Queries*/
+@media (max-width: 800px) {
+    section {
+        display: block;
+    }
+
+    section div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1500px) {
+    section div.scroll {
+        padding: 8em 8em 0 16em;
+    }
+    section div.sticky {
+        padding: 8em 8em 0 16em;
+    }
 }
