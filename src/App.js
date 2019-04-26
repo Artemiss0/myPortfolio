@@ -25,8 +25,8 @@ class App extends Component {
         super(props);
         this.state = {
             scrollPosition: window.pageYOffset,
-            childRefs: [0, ],
-            class:'navbar navbar-expand-lg middle'
+            childRefs: [0,],
+            class: 'navbar navbar-expand-lg middle'
         }
     }
 
@@ -34,7 +34,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <NavBar getClass={this.state.class} />
+                <NavBar getClass={this.state.class}/>
                 <Header/>
                 <main>
                     <About getRef={this.getRef}/>
@@ -52,17 +52,19 @@ class App extends Component {
     handleScroll = () => {
         let navClass = "navbar navbar-expand-lg ";
         let heights = this.state.childRefs;
-        let mousePosition = window.pageYOffset;
+        let windowPosition = window.innerHeight + window.pageYOffset;
 
-        if (mousePosition >= heights[0] && mousePosition < heights[1] ){
-            navClass += "middle";
-        }else if(mousePosition > heights[2] && mousePosition < heights[3]){
-            navClass += "left"
-        }else {
+        if (windowPosition > heights[1] && windowPosition < heights[2]){
             navClass += "right"
+        }else if(windowPosition > heights[2] && windowPosition < heights[3]){
+            navClass += "left"
+        }else if (windowPosition > heights[3]){
+            navClass += "right"
+        }else{
+            navClass += "middle"
         }
 
-        this.setState({class:navClass});
+        this.setState({class: navClass});
     };
 
     componentDidMount() {

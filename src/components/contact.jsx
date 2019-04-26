@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import contactHeader from '../images/postduifIllustration.png';
+import contactHeader from '../images/carrierPigeon.svg';
 import cv from '../documents/CV_NienkeOvermeer_NL.pdf'
 
 class Contact extends Component {

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import aboutHeader from "../images/me.png";
 
 //https://www.superhi.com/video/how-to-make-a-split-screen-site-with-sticky-sides
 class About extends Component {
@@ -54,7 +55,7 @@ class About extends Component {
 
                 </div>
                 <div className="sticky">
-
+                    <img className="stickyImage center" src={aboutHeader}/>
                 </div>
             </section>
         );

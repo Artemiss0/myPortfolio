@@ -56,6 +56,9 @@ h4 {
     font-weight: 200;
     letter-spacing: 0.1em;
 }
+b, strong{
+    font-weight: bold;
+}
 
 .yellowText {
     font-size: 15pt;
@@ -177,7 +180,17 @@ a.nav-link.active {
     height: auto;
     width: 100%;
 }
-
+a.liveButton{
+    background: #F8D702;
+    color: black;
+    padding: 1em 3em;
+    border-radius: 2em;
+    margin: 1em 0;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
 .mdl-tabs__tab-bar {
     width: 100%;
 }
@@ -214,6 +227,11 @@ a.nav-link.active {
 .projectContent{
     width: 100%;
     padding: 2em 2em;
+    border-left: 1px solid lightgray;
+    white-space: pre-line;
+}
+.projectContent img{
+    width: 100%;
 }
 
 .Dynastea {
@@ -223,6 +241,14 @@ a.nav-link.active {
 
 .Mintte {
     background: url("./images/tom-rumble-1114771-unsplash.jpg");
+    background-size: cover;
+}
+.WeCreate{
+    background: url("./images/weCreateHeader.jpg");
+    background-size: cover;
+}
+.Het{
+    background: url("./images/hetKegelhonkHeader.jpg");
     background-size: cover;
 }
 
@@ -272,7 +298,7 @@ a.nav-link.active {
     section div.scroll {
         padding: 8em 8em 0 16em;
     }
-    section div.sticky {
-        padding: 8em 8em 0 16em;
+    .stickyImage{
+        width: 55%;
     }
 }

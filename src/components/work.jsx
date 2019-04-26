@@ -8,23 +8,50 @@ class Work extends Component {
                 id: '0',
                 title: 'Dynastea',
                 subtitle: 'The Dynastea Of Tea',
-                image: './images/dynasteaHeader.jpg',
                 url: 'https://stud.hosted.hr.nl/0947037/Dynastea-tea/',
-                description: 'Dynastea is een organische/ milieubewuste thee & spice bar, met een gezellige sfeer en authentieke uitstraling.',
-                assignment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum lacus eget diam aliquet, eget bibendum ligula vulputate. Pellentesque tristique ultrices finibus. Morbi et ornare dui, eget faucibus turpis. Duis dictum, enim in viverra ullamcorper, massa risus eleifend dui, ut sollicitudin purus quam non quam. In hac habitasse platea dictumst. Aliquam non nunc id magna dapibus fermentum. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi aliquet dui accumsan purus porta viverra. Sed a vestibulum nisi.\n' +
-                    '\n\n' +
-                    'Cras rhoncus urna laoreet massa tristique, et aliquet nisl faucibus. Vestibulum luctus lorem magna, non placerat ante molestie ac. In eget tincidunt ipsum. Sed risus ex, tincidunt eu massa quis, euismod consequat metus. In rhoncus dui lorem, ac tempus nibh posuere id. Etiam pellentesque enim tortor, nec consectetur ipsum pretium quis. Maecenas leo justo, faucibus eu tincidunt faucibus, pulvinar eu ligula. Maecenas vitae turpis porta, sollicitudin mi in, vestibulum arcu. Fusce a tempor odio.'
+                description: 'Eenvoudig klanten reserveringen laten maken, bij Dynastea, via een boekingssysteem ',
+                assignment: 'Ik heb de uitdaging gekregen om een webapplicatie te voorzien van een boekings/ reserverings systeem te maken. Voor de opdracht moest ik ook zelf aan de slag om ' +
+                    'een opdrachtgever te vinden, voor wie ik het web-reserveringssysteem kon ontwerpen. Voor het gehele proces, het ontwerpen en programmeren van de website, hadden we 8 weken de tijd.' +
+                    '\n\n ' +
+                    'Ik heb een webapplicatie ontwikkelt waarbij de gebruiker eerst kan checken op beschikbaarheid d.m.v. tijd & datum. Als de datum beschikbaar is kunnen zij vervolgens verder een naam ' +
+                    'en telefoonnummer of email invoeren om de reservervatie compleet te maken \n\n',
+                mockupImages: ['dynasteaMockupBookingSystem.png', 'dynasteaMockupWebdesign.jpg'],
+                technicality: '\n Ik heb de front-end van de website opgezet met Materialize. De voorkant van de website communiceert met een php back-end waar alle data word opgehaald en alle logica word gedaan' +
+                    'b.p.t. het boekingssysteem. Alle informatie word vervolgens opgehaald en/of opgeslagen in een MySQL database server. \n\n'
             },
-            {id: '1', title: 'Mintte Fashion', subtitle: '', image: '', url: '', description: ''},
-            {id: '2', title: '', subtitle: '', image: '', url: '', description: ''},
-            {id: '3', title: '', subtitle: '', image: '', url: '', description: ''},
+            {
+                id: '1',
+                title: 'WeCreate',
+                subtitle: 'Join.Create.Share',
+                url: '',
+                description: 'Een online platvorm waar mensen hun werk kunnen laten zien en creatief werk kunnen ontdekken  ',
+                assignment: 'Ik heb de uitdaging gekregen om een webapplicatie te voorzien van een boekings/ reserverings systeem te maken. Voor de opdracht moest ik ook zelf aan de slag om ' +
+                    'een opdrachtgever te vinden, voor wie ik het web-reserveringssysteem kon ontwerpen. Voor het gehele proces, het ontwerpen en programmeren van de website, hadden we 8 weken de tijd.' +
+                    '\n\n ' +
+                    'Ik heb een webapplicatie ontwikkelt waarbij de gebruiker eerst kan checken op beschikbaarheid d.m.v. tijd & datum. Als de datum beschikbaar is kunnen zij vervolgens verder een naam ' +
+                    'en telefoonnummer of email invoeren om de reservervatie compleet te maken \n\n',
+                mockupImages: ['wecreateMockup1.jpg', 'wecreateMockup2.jpg'],
+                technicality: '\n Ik heb de front-end van de website opgezet met Materialize. De voorkant van de website communiceert met een php back-end waar alle data word opgehaald en alle logica word gedaan' +
+                    'b.p.t. het boekingssysteem. Alle informatie word vervolgens opgehaald en/of opgeslagen in een MySQL database server. \n\n'
+            },
+            {
+                id: '2',
+                title: 'Het Kegelhonk',
+                subtitle: '',
+                url: '',
+                description: '',
+                assignment: '',
+                mockupImages: ['hetKegelhonkMockup1.jpg', 'hetKegelhonkMockup2.jpg'],
+                technicality: ''
+            },
+            {id: '3', title: 'Mintte Fashion', subtitle: '', image: '', url: '', description: ''},
         ],
         height: '90vh',
         show: false,
         activeProject: false
     };
     updateRef = () => {
-        let position = this.sectionRef.offsetTop - 15;
+        let position = this.sectionRef.offsetTop;
         this.props.getRef(position);
         console.log("work " + position)
     };
@@ -55,7 +82,7 @@ class Work extends Component {
                 <div className="projects">
                     {this.state.projects.map((project) =>
                         <div key={project.id} style={projectHeader} onClick={() => this.handleOnClick(project.id)}
-                             className="projectHeader">
+                             className={project.title + " projectHeader"}>
                             <div>
                                 <h2>{project.title}</h2>
                                 <h4>{project.subtitle}</h4>
@@ -70,7 +97,7 @@ class Work extends Component {
             return (
                 <div className="projects">
                     <button className="backButton" onClick={this.closeProject}><FontAwesomeIcon icon="times"/></button>
-                    <div className="projectHeader" style={projectHeader}>
+                    <div className={project[id].title + " projectHeader"} style={projectHeader}>
                         <div>
                             <h2>{project[id].title}</h2>
                             <h4>{project[id].subtitle}</h4>
@@ -78,10 +105,19 @@ class Work extends Component {
                     </div>
                     <div className="projectContent">
                         <h2>{project[id].description}</h2>
-                        <a className="yellowText" href={project[id].url} rel="noopener noreferrer" target="_blank">Bekijk live</a>
-                        <br/>
-                        <br/>
-                        <p>{project[id].assignment}</p>
+                        <a className="liveButton" href={project[id].url} rel="noopener noreferrer" target="_blank">Bekijk
+                            live</a>
+                        <br/><br/>
+                        <p>
+                            {project[id].assignment}
+                            <img alt="mockup1" src={require('../images/' + project[id].mockupImages[0])}/>
+                        </p>
+
+                        <p>
+                            <b>Hoe werkt het?</b>
+                            {project[id].technicality}
+                            <img alt="mockup2" src={require('../images/' + project[id].mockupImages[1])}/>
+                        </p>
                     </div>
 
                 </div>
@@ -92,11 +128,11 @@ class Work extends Component {
     }
 
     closeProject = () => {
-            this.setState(this.setState(
-                {
-                    show:false,
-                    height: '90vh'
-                }))
+        this.setState(this.setState(
+            {
+                show: false,
+                height: '90vh'
+            }))
     };
 
     handleOnClick(id) {
@@ -104,7 +140,7 @@ class Work extends Component {
             show: true,
             activeProject: id,
             height: '40vh'
-        })
+        });
     }
 }
 
