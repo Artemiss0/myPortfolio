@@ -198,6 +198,9 @@ a:hover{
 .hide {
     visibility: hidden;
 }
+.projectHeader h2, .projectHeader h4{
+    text-shadow: black 2px 2px 10px;
+}
 
 .projectHeader {
     width: 100%;
@@ -300,5 +303,22 @@ a:hover{
     }
     .stickyImage{
         width: 55%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navbar-nav{
+        flex-direction: unset;
+    }
+    .headerImage{
+        width: 70%;
+        height: auto;
+    }
+    .col-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+    section div.scroll {
+        padding: 8em 2em;
     }
 }

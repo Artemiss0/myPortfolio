@@ -1,51 +1,11 @@
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import projectData from '../data/projects.json';
 
 class Work extends Component {
     state = {
-        projects: [
-            {
-                id: '0',
-                title: 'Dynastea',
-                subtitle: 'The Dynastea Of Tea',
-                url: 'https://stud.hosted.hr.nl/0947037/Dynastea-tea/',
-                description: 'Eenvoudig klanten reserveringen laten maken, bij Dynastea, via een boekingssysteem ',
-                assignment: 'Ik heb de uitdaging gekregen om een webapplicatie te voorzien van een boekings/ reserverings systeem te maken. Voor de opdracht moest ik ook zelf aan de slag om ' +
-                    'een opdrachtgever te vinden, voor wie ik het web-reserveringssysteem kon ontwerpen. Voor het gehele proces, het ontwerpen en programmeren van de website, hadden we 8 weken de tijd.' +
-                    '\n\n ' +
-                    'Ik heb een webapplicatie ontwikkelt waarbij de gebruiker eerst kan checken op beschikbaarheid d.m.v. tijd & datum. Als de datum beschikbaar is kunnen zij vervolgens verder een naam ' +
-                    'en telefoonnummer of email invoeren om de reservervatie compleet te maken \n\n',
-                mockupImages: ['dynasteaMockupBookingSystem.png', 'dynasteaMockupWebdesign.jpg'],
-                technicality: '\n Ik heb de front-end van de website opgezet met Materialize. De voorkant van de website communiceert met een php back-end waar alle data word opgehaald en alle logica word gedaan' +
-                    'b.p.t. het boekingssysteem. Alle informatie word vervolgens opgehaald en/of opgeslagen in een MySQL database server. \n\n'
-            },
-            {
-                id: '1',
-                title: 'WeCreate',
-                subtitle: 'Join.Create.Share',
-                url: '',
-                description: 'Een online platvorm waar mensen hun werk kunnen laten zien en creatief werk kunnen ontdekken  ',
-                assignment: 'Ik heb de uitdaging gekregen om een webapplicatie te voorzien van een boekings/ reserverings systeem te maken. Voor de opdracht moest ik ook zelf aan de slag om ' +
-                    'een opdrachtgever te vinden, voor wie ik het web-reserveringssysteem kon ontwerpen. Voor het gehele proces, het ontwerpen en programmeren van de website, hadden we 8 weken de tijd.' +
-                    '\n\n ' +
-                    'Ik heb een webapplicatie ontwikkelt waarbij de gebruiker eerst kan checken op beschikbaarheid d.m.v. tijd & datum. Als de datum beschikbaar is kunnen zij vervolgens verder een naam ' +
-                    'en telefoonnummer of email invoeren om de reservervatie compleet te maken \n\n',
-                mockupImages: ['wecreateMockup1.jpg', 'wecreateMockup2.jpg'],
-                technicality: '\n Ik heb de front-end van de website opgezet met Materialize. De voorkant van de website communiceert met een php back-end waar alle data word opgehaald en alle logica word gedaan' +
-                    'b.p.t. het boekingssysteem. Alle informatie word vervolgens opgehaald en/of opgeslagen in een MySQL database server. \n\n'
-            },
-            {
-                id: '2',
-                title: 'Het Kegelhonk',
-                subtitle: '',
-                url: '',
-                description: '',
-                assignment: '',
-                mockupImages: ['hetKegelhonkMockup1.jpg', 'hetKegelhonkMockup2.jpg'],
-                technicality: ''
-            },
-            {id: '3', title: 'Mintte Fashion', subtitle: '', image: '', url: '', description: ''},
-        ],
+        p:projectData,
+        projects: projectData,
         height: '90vh',
         show: false,
         activeProject: false
@@ -57,7 +17,7 @@ class Work extends Component {
     };
 
     componentDidMount() {
-        this.updateRef()
+        this.updateRef();
     }
 
     render() {
@@ -107,16 +67,18 @@ class Work extends Component {
                         <h2>{project[id].description}</h2>
                         <a className="liveButton" href={project[id].url} rel="noopener noreferrer" target="_blank">Bekijk
                             live</a>
-                        <br/><br/>
                         <p>
                             {project[id].assignment}
                             <img alt="mockup1" src={require('../images/' + project[id].mockupImages[0])}/>
                         </p>
 
                         <p>
+                            {project[id].idea}
+                            <img alt="mockup2" src={require('../images/' + project[id].mockupImages[1])}/>
+                        </p>
+                        <p>
                             <b>Hoe werkt het?</b>
                             {project[id].technicality}
-                            <img alt="mockup2" src={require('../images/' + project[id].mockupImages[1])}/>
                         </p>
                     </div>
 

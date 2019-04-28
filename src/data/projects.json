@@ -1,0 +1,35 @@
+[
+  {
+    "id" :0,
+    "title" : "Het Kegelhonk",
+    "subtitle" : "",
+    "url" : "",
+    "description": "Een webapplicatie voor het werven en informeren van clubleden.",
+    "assignment": "\n Ik kreeg de vraag, vanuit een kegelclubvereniging, of ik in staat was om een website op te zetten. De vereniging was op zoek naar een gemakkelijke manier om nieuwe leden te werven. En oude leden op de hoogte te houden van nieuwe ontwikkelingen en uitjes , doormiddel van nieuwsberichten. De meesten leden van de vereniging zijn op hogere leeftijd, ze willen graag een website die ook een jongere doelgroep aanspreekt. De uitstraling van de website moet tussen de flitsende site van het bowlen en de oubollige sites van de kegelclubs in zitten. Een moderne en actieve uitstraling. \n\n Ik heb besloten om een aangepaste WordPress template te maken voor de vereniging. Ik heb gekozen voor WordPress omdat het gemakkelijk te gebruiken is en gemakkelijk aan te passen is met Thema’s en Plug-ins. De vereniging moet in staat zijn om de website zelf te onderhouden, dit is een van de redenen waarom ik voor WordPress gekozen heb. Voor de front-end van de website heb ik gebruik gemaakt van Bootstrap. Met WordPress zijn ze gemakkelijk in staat om blog berichten te schrijven en updates te doen. \n\n",
+    "idea": "\n Tijdens het ontwerpen van de website was de vereniging ook bezig met verbouwingsplannen voor de banen. De banen zouden rood met grijs en een tint groen worden. Ik heb besloten om deze kleuren ook te implementeren in de website. Vervolgens ben ik met een ontwerp teruggegaan naar de vereniging. Zij hebben hierop hun feedback gegeven, wat ze leuk vonden en wat ze graag veranderd zagen. Hiervan heb ik een aantal iteraties gemaakt totdat alles naar wens was. \n\n ",
+    "technicality" : "\n De website is gemaakt met behulp van WordPress, een Content Management System (CMS). Ik heb voor de front-end gebruik gemaakt van Bootstrap, een CSS framework. Ik heb een standard WordPress template veranderd door gebruik te maken van plug-ins. Een van de plug-ins die ik onder andere heb gebruikt is Advanced Custom Fields (AFC). Hiermee heb ik geprobeerd het gebruik van de website zo makkelijk en duidelijk mogelijk te maken. ",
+    "mockupImages" : ["hetKegelhonkMockup1.jpg","hetKegelhonkMockup2.jpg"]
+  },
+  {
+    "id": 1,
+    "title" : "WeCreate",
+    "subtitle" : "Join.Create.Share",
+    "url" : "",
+    "description" : "Een online platvorm waar mensen hun werk kunnen laten zien en creatief werk van andere kunnen ontdekken.",
+    "assignment" : "\n De opdracht was om een webapplicatie te bouwen in een professioneel webframework. Voor de opdracht moest ik onderzoek doen naar verschillende MVC frameworks. Na onderzoek en het vergelijken van verschillende MVC frameworks, heb ik besloten om met Laravel te gaan werken. Voor het gehele proces, van ontwerpen tot development, had ik 8 weken de tijd. \n\n Ik heb besloten om een online platvorm te creëren, in Laravel, waar mensen hun werk kunnen delen met andere. De gebruiker is in staat om een eigen profiel aan te maken op de webapplicatie. Zodra hij/zij is ingelogd zijn ze in staat om hun eigen werk te publiceren en/ of het werk van andere te bekijken en appreciëren. De discover pagina is bedoeld om de gebruiker te helpen nieuwe of bestaande projecten te ontdekken. \n\n",
+    "idea": "",
+    "technicality" : "\n Voor de front-end van de website heb ik gebruik gemaakt van Bootstrap. De voorkant van de website communiceert met de PHP back-end waar alle data wordt opgehaald. Deze data wordt opgeslagen en opgehaald in een MySQL database server. \n\n",
+    "mockupImages" : ["wecreateMockup1.jpg","wecreateMockup2.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "Dynastea",
+    "subtitle" : "The Dynastea of Tea",
+    "url" : "https://stud.hosted.hr.nl/0947037/Dynastea-tea/",
+    "description" : "Eenvoudig klanten reserveringen laten maken, bij Dynastea, via een boekingssysteem.",
+    "assignment" : "\n Ik heb de uitdaging gekregen om een webapplicatie te voorzien van een boekings-/ reserveringssysteem. Voor de opdracht moest ik zelf een opdrachtgever weten te vinden, voor wie ik de webapplicatie kon ontwikkelen. Voor het gehele proces, van ontwerpen tot development, had ik 8 weken de tijd. \n\n Ik heb een webapplicatie ontwikkelt waarbij de gebruiker eerst kan checken op beschikbaarheid d.m.v. arrangement, tijd & datum. Als er beschikbaarheid is kan de gebruiker de reservering afronden door een naam en telefoonnummer in te voeren. Als er geen beschikbaarheid is zal de gebruiker de tijd, datum of het arrangement moeten veranderen. \n\n",
+    "idea": "\n De huisstijl en het concept van Dynastea stonden al vast. Dit betekende dat ik het ontwerp van de website moest afstemmen op de kleuren, fonts en vormen van de huisstijl. De opdrachtgever wilde dat de website het volgende uitstraalde: milieubewust (groen), rust & modern. Dit heb ik dan ook geprobeerd mee te nemen in het ontwerp. \n\n",
+    "technicality" : "\n De front-end van de website heb ik opgezet met Materialize. De voorkant van de website communiceert met de PHP back-end waar alle data wordt opgehaald. Deze data wordt opgeslagen en opgehaald in een MySQL database server. \n\n",
+    "mockupImages" :  ["dynasteaMockupBookingSystem.png","dynasteaMockupWebdesign.jpg"]
+  }
+]
