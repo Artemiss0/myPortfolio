@@ -66,7 +66,7 @@ class Work extends Component {
                     <div className="projectContent">
                         <h2>{project[id].description}</h2>
                         <a className="liveButton" href={project[id].url} rel="noopener noreferrer" target="_blank">Bekijk
-                            live</a>
+                            project</a>
                         <p>
                             {project[id].assignment}
                             <img alt="mockup1" src={require('../images/' + project[id].mockupImages[0])}/>

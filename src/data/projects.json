@@ -14,7 +14,7 @@
     "id": 1,
     "title" : "WeCreate",
     "subtitle" : "Join.Create.Share",
-    "url" : "",
+    "url" : "https://github.com/Artemiss0/wecreate",
     "description" : "Een online platvorm waar mensen hun werk kunnen laten zien en creatief werk van andere kunnen ontdekken.",
     "assignment" : "\n De opdracht was om een webapplicatie te bouwen in een professioneel webframework. Voor de opdracht moest ik onderzoek doen naar verschillende MVC frameworks. Na onderzoek en het vergelijken van verschillende MVC frameworks, heb ik besloten om met Laravel te gaan werken. Voor het gehele proces, van ontwerpen tot development, had ik 8 weken de tijd. \n\n Ik heb besloten om een online platvorm te creëren, in Laravel, waar mensen hun werk kunnen delen met andere. De gebruiker is in staat om een eigen profiel aan te maken op de webapplicatie. Zodra hij/zij is ingelogd zijn ze in staat om hun eigen werk te publiceren en/ of het werk van andere te bekijken en appreciëren. De discover pagina is bedoeld om de gebruiker te helpen nieuwe of bestaande projecten te ontdekken. \n\n",
     "idea": "",
