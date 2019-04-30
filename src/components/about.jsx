@@ -25,9 +25,8 @@ class About extends Component {
                         <b>Hallo ik zal me even voorstellen,</b>
                     </h5>
                     <p>
-                        Mijn naam is Nienke Overmeer. Ik ben een 22-jarige student uit Bergschenhoek. In mijn vrije tijd
-                        doe ik aan volleybal en muurklimmen. Daarnaast vind ik het ook leuk om te tekenen en te oefenen
-                        met instant fotografie. Ook blijf ik op de hoogte van nieuwe technieken en ontwikkelingen.
+                        Mijn naam is Nienke Overmeer. Ik ben een 22-jarige student uit Bergschenhoek. In mijn vrije tijd doe ik aan volleybal, muurklimmen, 
+                        tekenen, ontspannen met vrienden en instant fotografie. Ook ben ik vaak bezig met ontwerp of development projecten. 
                     </p>
                     <br/>
                     <h5><b>Opleidingen</b></h5>
