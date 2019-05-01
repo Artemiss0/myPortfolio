@@ -13,7 +13,6 @@ class Work extends Component {
     updateRef = () => {
         let position = this.sectionRef.offsetTop;
         this.props.getRef(position);
-        console.log("work " + position)
     };
 
     componentDidMount() {
