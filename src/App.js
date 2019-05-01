@@ -55,7 +55,6 @@ class App extends Component {
         let windowPosition = window.innerHeight + window.pageYOffset;
         if (window.innerWidth < 800){
             navClass += "middle";
-            console.log('smaller')
         } else {
         if (windowPosition > heights[1] && windowPosition < heights[2]){
             navClass += "right"
