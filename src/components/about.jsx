@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import aboutHeader from "../images/me.png";
 
-//https://www.superhi.com/video/how-to-make-a-split-screen-site-with-sticky-sides
 class About extends Component {
     updateRef = () =>{
         let position = this.sectionRef.offsetTop;
         this.props.getRef(position);
-        console.log("about " +position)
     };
     componentDidMount() {
         this.updateRef();
