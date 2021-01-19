@@ -126,6 +126,10 @@ section div.sticky {
     font-size: 13pt;
 }
 
+.navbar ul li a {
+    color: black;
+}
+
 a.nav-link.active {
     background: #F8D702;
 }

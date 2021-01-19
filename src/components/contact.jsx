@@ -60,7 +60,7 @@ class Contact extends Component {
                 </div>
 
                 <div className="sticky">
-                    <img className="stickyImage center" src={contactHeader}/>
+                    <img className="stickyImage center" alt="Postduif illustratie" src={contactHeader}/>
                 </div>
             </section>
         );

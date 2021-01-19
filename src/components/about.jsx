@@ -52,7 +52,7 @@ class About extends Component {
 
                 </div>
                 <div className="sticky">
-                    <img className="stickyImage center" src={aboutHeader}/>
+                    <img className="stickyImage center" alt="Zelf illustratie" src={aboutHeader}/>
                 </div>
             </section>
         );

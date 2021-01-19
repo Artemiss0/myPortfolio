@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
             <div className="header" ref="innerHeader">
-                <img className="headerImage center"  src={headerImage} alt="Header Image"/>
+                <img className="headerImage center"  src={headerImage} alt="zelf illustratie"/>
             </div>
         );
     }
